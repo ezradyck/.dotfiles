@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SYMLINK_FOLDERS=".zshrc,.config/nvim,.config/tmux"
+DOTFILES=$HOME/.dotfiles
+
+pushd $DOTFILES
+for folder in $(echo $SYMLINK_FOLDERS | sed "s/,/ /g")
+do
+	echo Linking $folder
+	ln -s $DOTFILES/$folder $HOME/$folder
+done
+popd
