@@ -11,4 +11,5 @@ Contains config files that can be used across other systems.
 ## TODO
 
 - Symlink script is quite shaky and needs to be better.
-- Determine if I actually want .gitconfig in this repo or if I would be better suited finding a way to source git aliases from another file.
+    - Maybe look into using GNU stow to manage this better..?
+- Look into using yadm
