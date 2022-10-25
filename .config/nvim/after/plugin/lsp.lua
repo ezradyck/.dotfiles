@@ -21,9 +21,9 @@ cmp.setup({
     },
     mapping = cmp.mapping.preset.insert({
         ['<c-y>'] = cmp.mapping.confirm({ select = true }),
-        ['<c-u'] = cmp.mapping.scroll_docs(-4),
-        ['<c-d'] = cmp.mapping.scroll_docs(4),
-        ['<c-Space'] = cmp.mapping.complete(),
+        ['<c-u>'] = cmp.mapping.scroll_docs(-4),
+        ['<c-d>'] = cmp.mapping.scroll_docs(4),
+        ['<c-Space>'] = cmp.mapping.complete(),
     }),
 
     formatting = {
@@ -61,29 +61,7 @@ local function config(_config)
     }, _config or {})
 end
 
---[[
-local pid = vim.fn.getpid()
-local omnisharp_bin = "/Users/ezradyck/.local/omnisharp/run" 
-
-require("lspconfig").omnisharp.setup({
-    cmd = { omnisharp_bin, "--languageServer", "--hostPID", tostring(pid) },
-    autostart = true
-})
-require("lspconfig").omnisharp.setup(config({
-    cmd = { omnisharp_bin, "--languageServer", "--hostPID", tostring(pid) },
-
-    enable_editorconfig_support = true,
-    enable_ms_build_load_projects_on_demand = true,
-    enable_roslyn_analyzers = true,
-
-    organize_imports_on_format = true,
-    enable_import_completion = true,
-    analyze_open_documents_only = true,
-}))
-]]--
-
 require("lspconfig").pyright.setup{}
--- require('lspconfig').csharp_ls.setup{}
 
 require('lspconfig').omnisharp.setup(config({
     cmd = { 'dotnet', '/Users/ezradyck/.local/omnisharp/omnisharp/OmniSharp.exe' },
