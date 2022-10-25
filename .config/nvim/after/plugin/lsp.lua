@@ -63,8 +63,10 @@ end
 
 require("lspconfig").pyright.setup{}
 
+-- TODO: maybe don't use omnisharp... memory hog
+-- '/Users/ezradyck/.local/omnisharp/omnisharp/OmniSharp.exe'
 require('lspconfig').omnisharp.setup(config({
-    cmd = { 'dotnet', '/Users/ezradyck/.local/omnisharp/omnisharp/OmniSharp.exe' },
+    cmd = { 'C:/Users/EzraDyck/AppData/Local/omnisharp/OmniSharp.exe' },
     autostart = true
 }))
 

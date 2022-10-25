@@ -14,3 +14,6 @@ nnoremap('<c-l>', '<cmd>wincmd l<cr>');
 
 nnoremap('<c-s>h', '<cmd>split<cr><cmd>wincmd j<cr>');
 nnoremap('<c-s>v', '<cmd>vsplit<cr><cmd>wincmd l<cr>');
+
+nnoremap('<c-z>', '<cmd>set invwrap<cr>');
+inoremap('<c-z>', '<cmd>set invwrap<cr>');
