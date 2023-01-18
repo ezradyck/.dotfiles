@@ -8,6 +8,8 @@ nnoremap('<leader>sv', '<cmd>source $MYVIMRC<cr>');
 inoremap("jk", "<esc>")
 inoremap("<leader>qp", "<esc>pa");
 
+nnoremap('<c-a>', 'ggVG');
+
 nnoremap('<c-h>', '<cmd>wincmd h<cr>');
 nnoremap('<c-j>', '<cmd>wincmd j<cr>');
 nnoremap('<c-k>', '<cmd>wincmd k<cr>');
