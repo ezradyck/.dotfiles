@@ -109,3 +109,4 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=/Users/ezradyck/.nvm/versions/node/v16.16.0/bin:/Users/ezradyck/bin:/usr/local/bin:/Users/ezradyck/.local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ezradyck/.nvm/versions/node/v16.16.0/bin:/Users/ezradyck/bin:/Users/ezradyck/.local/bin:/Users/ezradyck/.cargo/bin:/Users/ezradyck/.dotnet/tools:/Users/ezradyck/.dotnet/tools:~/Programming/nand2tetris/tools
