@@ -1,0 +1,243 @@
+ls
+sl
+ls
+ssl
+ls
+dir
+ls
+ls -la
+git s
+cd ~/.dotfiles
+git s
+ls
+ls -la
+$ALACRITTY
+echo $ALACRITTY
+which nu
+vim .config/alacritty/
+:q
+ls
+vim .
+cargo install --locked zellij
+cargo
+vim .config/alacritty/
+$nu.env
+echo $nu.econfig
+echo $nu.config
+echo $nu.config-path
+echo $nu.config-path | cd
+cd 
+cd "Library/Application Support"
+ls
+cd nushell/
+ls
+vim .
+vim 
+vim .
+nvim .
+nano
+nvim .
+cargo
+cd $HOME
+cd $XDG_HOME
+$HOME
+cd "../Library/Application Support"
+cd nushell/
+ls
+nvim .
+echo
+cd "../Library/Application Support"
+cd nushell/
+ls
+nvim .
+cd "../Library/Application Support"
+nvim .
+brew
+which brew
+echo $PATH
+echo $env.PATH
+echo $env
+$env
+ls
+nvim .
+vim .
+cd $env.HOME
+ls
+cd .config
+ls
+vim .
+ls
+cd .dotfiles
+ls
+touch TODO.md
+vim .
+nvim .
+vim .
+vi
+cd $env.HOME/Library
+cd ../Library
+ls
+cd "Application Support"
+ls
+cd nushell/
+ls
+vim .
+nano .
+ls
+nano env.nu
+ls
+cat env,nu
+cat env.nu
+:q
+nvim
+which nvim
+which brew
+$env.PATH
+ls
+$env.PATH
+:q
+ls
+$env.PATH
+which nu
+which brew
+ls
+$env.PATH
+which zsh
+$env.PATH
+which nu
+ls
+cd $env.HOME/.config/alacritty
+cd HOM
+cd HOME
+cd $HOME
+cd $env.HOME
+dls
+ls
+cd .config/alacritty
+ls
+vim .
+cd .config/alacritty/
+ls
+vim .
+ls
+defaults write -g AppleFontSmoothing -bool NO
+defaults write -g AppleFontSmoothing -bool YES
+:q
+cargo install starship
+cargo install starship --locked
+curl -sS https://starship.rs/install.sh | sh
+cd Libraray
+cd Library/
+cd "Application Support"
+l
+ls
+cd nushell
+ls
+vim .
+ls
+starship preset bracketed-segments ~/.config/starship.toml
+starship preset bracketed-segments | save  ~/.config/starship.toml
+ls
+..
+ls
+cd 
+ls
+cd Programming
+ls
+cd nand2tetris/
+ls
+cd projects
+ls
+git s
+..
+ls
+cd pragprog/
+ls
+cd ~/Downloads
+ls
+cd CascadiaCode/
+ls
+bat readme.md
+bat
+cat readme.md
+fc-match
+fc-match Caskaydia
+fc-match CaskaydiaCode
+fc-match CaskaydiaCode -s
+fc-match "CaskaydiaCove Nerd Font Mono" -s
+which fc-match
+cd 
+cd .config/alacritty/
+ls
+vim .
+vim .config/alacritty/
+vim .config/alacritty/\
+vim .config/alacritty/
+alacritty
+ls
+cd .config/alacritty/
+cd ~/Programmning/nand2tetris
+ls
+cd ~/Programming/
+ls
+cd nand2tetris/
+l
+ls
+git s
+git info
+git s
+git remotes
+git remote
+git s
+ls
+ls -la
+cd .git
+ls
+cat HEAD
+git s
+git add .
+..
+git add .
+git commit -m'WIP'
+git s
+git push
+git s
+git reset --soft HEAD
+ls
+git s
+gi tl
+git reset --soft HEAD~1
+ls
+git s
+"**/target" | save .gitignore
+ls
+git s
+git add .gitignore
+git s
+git add .gitignore
+git restore --staged .
+git add .gitignore
+ls
+git s
+git add .
+git s
+git commit -m 'Wrote hack assebler'
+git push
+gi ts
+git s
+gt s
+git s
+ls
+cd projects/
+ls
+cd 07
+ls
+cd ~/Documents
+ls
+open Budget.numbers
+^open Budget.numbers
+cd ~/.dotfiles
+ls
+mkdir nushell
+mkdir alacritty
+cp "~/Library/Application Support/nushell" .
