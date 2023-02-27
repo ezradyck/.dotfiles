@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/d/Code/RocketRez'
+let g:netrw_dirhist_6='/d/Code/RocketRez/.vs'
+let g:netrw_dirhist_5='/d/Code/RocketRez/.vs/ProjectEvaluation'
+let g:netrw_dirhist_4='/d/Code/RocketRez/.vs'
+let g:netrw_dirhist_3='/d/Code/RocketRez/.vs/ProjectEvaluation'
+let g:netrw_dirhist_2='/d/Code/RocketRez/.vs'
+let g:netrw_dirhist_1='/d/Code/RocketRez'
+let g:netrw_dirhist_0='/d/Code/RocketRez/RocketDomain/Availability'
+let g:netrw_dirhist_9='/d/Code/RocketRez/RocketDomain'
+let g:netrw_dirhist_8='/d/Code/RocketRez'
