@@ -1,9 +1,8 @@
 require("dyck.set")
 require("dyck.remap")
 
-local pid = vim.fn.getpid()
 require'lspconfig'.omnisharp.setup {
-    cmd = { "C:/Users/EzraDyck/AppData/Local/omnisharp/OmniSharp.exe", "--languageserver", "--hostPID", tostring(pid) },
+    cmd = { "C:/Users/EzraDyck/AppData/Local/omnisharp/OmniSharp.exe" },
 
     -- Enables support for reading code style, naming convention and analyzer
     -- settings from .editorconfig.
