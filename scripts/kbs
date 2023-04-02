@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kb="$(kbswitch list | fzf)";
+kbswitch $kb
