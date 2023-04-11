@@ -8,6 +8,8 @@ nnoremap('<leader>sv', '<cmd>source $MYVIMRC<cr>');
 inoremap("jk", "<esc>")
 inoremap("<leader>qp", "<esc>pa");
 
+nnoremap('<leader>ab', ':%bd<cr>');
+
 nnoremap('<c-h>', '<cmd>wincmd h<cr>');
 nnoremap('<c-j>', '<cmd>wincmd j<cr>');
 nnoremap('<c-k>', '<cmd>wincmd k<cr>');
@@ -26,6 +28,9 @@ nnoremap('<leader>td', ':bd term<c-a><cr>');
 nnoremap('<leader>d', '"_d');
 
 nnoremap('<leader>b', '<cmd>tabnew<cr><cmd>term msbuild /property:GenerateFullPaths=true /t:build /property:Configuration=Debug /m<cr>G');
+nnoremap('<leader>tb', '<cmd>tabnew<cr><cmd>term msbuild /property:GenerateFullPaths=true /t:build /property:Configuration=Testing /m<cr>G');
+
+nnoremap('<c-f>', '<cmd>Format<cr><cmd>w<cr>');
 
 local builtin = require('telescope.builtin')
 nnoremap('<leader>ff', builtin.find_files)
