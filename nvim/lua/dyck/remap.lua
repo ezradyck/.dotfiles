@@ -1,5 +1,7 @@
 local nnoremap = require("dyck.keymap").nnoremap
 local inoremap = require("dyck.keymap").inoremap
+local vnoremap = require("dyck.keymap").vnoremap
+
 
 nnoremap("<leader>pv", "<cmd>Ex<cr>")
 nnoremap('<leader>ev', '<cmd>split ' .. vim.fn.call('stdpath', {'config'}) .. '<cr>');
@@ -32,8 +34,5 @@ nnoremap('<leader>tb', '<cmd>tabnew<cr><cmd>term msbuild /property:GenerateFullP
 
 nnoremap('<c-f>', '<cmd>Format<cr><cmd>w<cr>');
 
-local builtin = require('telescope.builtin')
-nnoremap('<leader>ff', builtin.find_files)
-nnoremap('<leader>fg', builtin.live_grep)
-nnoremap('<leader>fb', builtin.buffers)
-nnoremap('<leader>fh', builtin.help_tags)
+nnoremap('<leader>f', vim.lsp.buf.format);
+vnoremap('<leader>f', vim.lsp.buf.format);
