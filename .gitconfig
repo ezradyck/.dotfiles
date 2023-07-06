@@ -1,0 +1,44 @@
+[user]
+	name = Ezra Dyck
+	email = ezra.dyck@rocketrez.com
+[alias]
+	cmp = "!cmp() { git commit -a -m \"$@\" && git push ; } ; cmp"
+	cm = commit -m
+	ca = "!ca () { git commit --amend --no-edit ; } ; ca"
+	cmp = "!cap() { git ca && git push -f ; } ; cap"
+	bm = "!bm() { git branch -m \"$@\" ; } ; bm"
+	br = "!br() { git branch -r ; } ; br"
+	bd = "!bd() { git branch -D \"$@\" ; } ; bd"
+	r = "!r() { git restore . ; } ; r"
+	rs = "!rs() { git restore --staged . ; } ; rs"
+	au = "!au() { git add $(git ls-files -o --exclude-standard) ; }; au"
+	cob = "!cob() { \
+			b=$(git branch -r | fzf); \
+			git checkout -b \"$@\" $b ; \
+		}; \
+		cob"
+	co = checkout
+	b = branch
+	s = status
+
+	sd = "!sd() { git status --porcelain | grep '^.M.*DAL' ; }; sd"
+	rd = "!rd() { git restore **/DAL/** ; }; rd"
+
+	sl = stash list
+	sa = "!sa() { git stash apply stash@{\"$@\"} ; } ; sa"
+	sd = "!sd() { git stash drop stash@{\"$@\"} ; } ; sd"
+	ss = stash show
+	sp = stash pop
+	st = stash -um 'tmp'
+	stk = stash -kum 'tmp'
+
+	l = log --graph
+[rerere]
+	enabled = false 
+[core]
+	editor = nvim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

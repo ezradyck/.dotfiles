@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SYMLINK_FOLDERS=".zshrc,.config/nvim,.config/tmux"
+SYMLINK_FOLDERS=".zshrc,.config/nvim,.config/tmux,.gitconfig"
 DOTFILES=$HOME/.dotfiles
 
 pushd $DOTFILES
