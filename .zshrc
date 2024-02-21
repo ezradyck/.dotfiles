@@ -109,4 +109,30 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH=/Users/ezradyck/.nvm/versions/node/v16.16.0/bin:/Users/ezradyck/bin:/usr/local/bin:/Users/ezradyck/.local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ezradyck/.nvm/versions/node/v16.16.0/bin:/Users/ezradyck/bin:/Users/ezradyck/.local/bin:/Users/ezradyck/.cargo/bin:/Users/ezradyck/.dotnet/tools:/Users/ezradyck/.dotnet/tools:~/Programming/nand2tetris/tools
+export PATH=/Users/ezradyck/.nvm/versions/node/v16.16.0/bin:/Users/ezradyck/bin:/usr/local/bin:/Users/ezradyck/.local/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/ezradyck/.nvm/versions/node/v16.16.0/bin:/Users/ezradyck/bin:/Users/ezradyck/.local/bin:/Users/ezradyck/.cargo/bin:/Users/ezradyck/.dotnet/tools:/Users/ezradyck/.dotnet/tools:~/Programming/nand2tetris/tools:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin:$(go env GOROOT)/bin
+
+eval "$(direnv hook zsh)"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ezradyck/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ezradyck/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ezradyck/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ezradyck/google-cloud-sdk/completion.zsh.inc'; fi
+
+# bun completions
+[ -s "/Users/ezradyck/.bun/_bun" ] && source "/Users/ezradyck/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# pnpm
+export PNPM_HOME="/Users/ezradyck/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
