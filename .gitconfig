@@ -1,6 +1,6 @@
 [user]
 	name = Ezra Dyck
-	email = ezra.dyck@rocketrez.com
+	email = ezra.dyck@card.com
 [alias]
 	cmp = "!cmp() { git commit -a -m \"$@\" && git push ; } ; cmp"
 	cm = commit -m
