@@ -22,11 +22,13 @@ require('lazy').setup({
     'tpope/vim-sleuth',
 
     {
-        'navarasu/onedark.nvim',
+        "ribru17/bamboo.nvim",
+        lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'onedark'
-        end
+            require("bamboo").setup({})
+            require("bamboo").load()
+        end,
     },
 
     {
@@ -43,7 +45,7 @@ require('lazy').setup({
         opts = {
           options = {
             icons_enabled = false,
-            theme = 'onedark',
+            theme = 'bamboo',
             component_separators = '|',
             section_separators = '',
           },
