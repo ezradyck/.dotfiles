@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SYMLINK_FOLDERS=".zshrc,.config/nvim,.config/tmux,.gitconfig"
-DOTFILES=$HOME/.dotfiles
+DOTFILES=$HOME/Code/.dotfiles
 
 pushd $DOTFILES
 for folder in $(echo $SYMLINK_FOLDERS | sed "s/,/ /g")

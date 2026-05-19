@@ -34,22 +34,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 require('mason').setup()
 require('mason-lspconfig').setup({
-  ensure_installed = { 'lua_ls', 'rust_analyzer' },
+  ensure_installed = { 'lua_ls' },
   handlers = {
     lua_ls = function()
       require('lspconfig').lua_ls.setup {}
     end,
-    eslint = function()
-      require('lspconfig').eslint.setup {}
-    end,
-    elmls = function()
-      require('lspconfig').elmls.setup {}
-    end,
-    biome = function()
-      require('lspconfig').biome.setup {}
-    end,
-    volar = function()
-      require('lspconfig').volar.setup {}
-    end
   },
 })

@@ -1,4 +1,3 @@
-require('dyck.lazy')
 require("dyck.set")
 require("dyck.remap")
 

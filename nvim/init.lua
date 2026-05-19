@@ -1,3 +1,4 @@
+require("config.lazy")
 require('dyck')
 
 -- The line beneath this is called `modeline`. See `:help modeline`

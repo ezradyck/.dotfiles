@@ -1,24 +1,9 @@
-local configs = require('nvim-treesitter.configs')
+require('nvim-treesitter').install({ 'rust', 'lua', 'javascript', 'typescript', 'c_sharp' })
 
-configs.setup({
-    ensure_installed = { 'lua', 'vim', 'javascript', 'typescript', 'tsx', 'rust', 'go', },
-    sync_install = false,
-    highlight = { enable = true },
-    indent = { enable = true },
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { '*.rs', '*.lua', '*.cs', '*.js', '*.ts', '*.tsx', '*.css', '*.html' },
+  callback = function() vim.treesitter.start() end,
 })
 
-local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
-
-parser_config.blade = {
-    install_info = {
-        url = "https://github.com/EmranMR/tree-sitter-blade",
-        files = {"src/parser.c"},
-        branch = "main",
-    },
-    filetype = "blade"
-}
-
--- " Set the *.blade.php file to be filetype of blade 
--- augroup BladeFiltypeRelated
---   au BufNewFile,BufRead *.blade.php set ft=blade
--- augroup END
+vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.wo[0][0].foldmethod = 'expr'
